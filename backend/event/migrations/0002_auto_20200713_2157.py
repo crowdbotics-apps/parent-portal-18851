@@ -6,20 +6,11 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('event', '0001_initial'),
+        ("event", "0001_initial"),
     ]
 
     operations = [
-        migrations.RemoveField(
-            model_name='faq',
-            name='title',
-        ),
-        migrations.RemoveField(
-            model_name='location',
-            name='image',
-        ),
-        migrations.RemoveField(
-            model_name='location',
-            name='name',
-        ),
+        migrations.RemoveField(model_name="faq", name="title",),
+        migrations.RemoveField(model_name="location", name="image",),
+        migrations.RemoveField(model_name="location", name="name",),
     ]
