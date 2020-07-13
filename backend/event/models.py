@@ -5,8 +5,6 @@ from django.db import models
 class Location(models.Model):
     "Generated Model"
     amenities = models.TextField(null=True, blank=True,)
-    name = models.CharField(null=True, blank=True, max_length=256,)
-    image = models.SlugField(null=True, blank=True, max_length=50,)
 
 
 class VendorDetail(models.Model):
@@ -128,7 +126,6 @@ class Favorites(models.Model):
 
 class Faq(models.Model):
     "Generated Model"
-    title = models.CharField(max_length=256,)
     description = models.TextField()
 
 
